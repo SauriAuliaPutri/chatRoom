@@ -35,12 +35,6 @@ chatForm.addEventListener('submit', (e) => {
   // Get message text
   let msg = e.target.elements.msg.value;
 
-//   msg = msg.trim();
-
-//   if (!msg) {
-//     return false;
-//   }
-
   // Emit message to server
   socket.emit('chatMessage', msg);
 
@@ -71,12 +65,3 @@ function outputUsers(users) {
   ${users.map(user => `<li>${user.username}</li>`).join('')}
   `;
 };
-
-// //Prompt the user before leave chat room
-// document.getElementById('leave-btn').addEventListener('click', () => {
-//   const leaveRoom = confirm('Are you sure you want to leave the chatroom?');
-//   if (leaveRoom) {
-//     window.location = '../index.html';
-//   } else {
-//   }
-// });
