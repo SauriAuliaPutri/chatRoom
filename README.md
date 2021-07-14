@@ -1,5 +1,7 @@
-npm install
+- This app using Node.Js, Express, and Socket.io
 
-npm run dev
+- npm install
 
-Go to localhost:3000
+- npm run dev
+
+- Go to localhost:3000
